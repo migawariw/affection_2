@@ -150,18 +150,31 @@ th {
     font-weight: bold;
 }
 
-/* 全体をラップするコンテナ */
-.container {
-    max-width: 800px; /* 最大幅を指定 */
-    margin: 0 auto; /* 左右の余白を自動調整 */
-    padding: 0 20px; /* サイドの余白 */
-    box-sizing: border-box; /* パディングを含めたサイズ計算 */
-}
-
 /* スマホ対応（600px以下） */
 @media (max-width: 600px) {
-    .container {
-        padding: 0 10px; /* スマホでは余白を少し減らす */
+    body {
+        font-size: 2rem; /* 全体のテキストサイズを2倍に */
+    }
+    h1 {
+        font-size: 4rem; /* 見出し1を2倍に */
+    }
+    h2 {
+        font-size: 3.6rem; /* 見出し2を2倍に */
+    }
+    h3 {
+        font-size: 3rem; /* 見出し3を2倍に */
+    }
+    table {
+        font-size: 2rem; /* テーブルのフォントサイズも2倍に */
+    }
+    input, button {
+        font-size: 2rem; /* 入力フィールドとボタンも2倍に */
+    }
+    #result {
+        font-size: 2rem; /* 結果エリアのフォントサイズも2倍に */
     }
 }
+
+
+
 
